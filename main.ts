@@ -39,110 +39,38 @@ basic.forever(function () {
     } else if (item == 6) {
         radio.sendNumber(6)
         basic.showString("F")
-    } else if (pins.analogReadPin(AnalogPin.P0) <= 399 && pins.analogReadPin(AnalogPin.P0) >= 300) {
-        radio.sendNumber(7)
-        basic.showNumber(-25)
-    } else if (pins.analogReadPin(AnalogPin.P0) <= 299 && pins.analogReadPin(AnalogPin.P0) >= 200) {
-        radio.sendNumber(8)
-        basic.showNumber(-50)
-    } else if (pins.analogReadPin(AnalogPin.P0) <= 199 && pins.analogReadPin(AnalogPin.P0) >= 100) {
-        radio.sendNumber(9)
-        basic.showNumber(-75)
-    } else if (pins.analogReadPin(AnalogPin.P0) <= 99 && pins.analogReadPin(AnalogPin.P0) >= 1) {
-        radio.sendNumber(10)
-        basic.showNumber(-100)
-    } else if (pins.analogReadPin(AnalogPin.P0) >= 601 && pins.analogReadPin(AnalogPin.P0) <= 700) {
-        radio.sendNumber(11)
-        basic.showNumber(25)
-    } else if (pins.analogReadPin(AnalogPin.P0) >= 701 && pins.analogReadPin(AnalogPin.P0) <= 800) {
-        radio.sendNumber(12)
-        basic.showNumber(50)
-    } else if (pins.analogReadPin(AnalogPin.P0) >= 801 && pins.analogReadPin(AnalogPin.P0) <= 900) {
-        radio.sendNumber(13)
-        basic.showNumber(75)
-    } else if (pins.analogReadPin(AnalogPin.P0) >= 901 && pins.analogReadPin(AnalogPin.P0) <= 1000) {
-        radio.sendNumber(14)
-        basic.showNumber(100)
     } else if (pins.analogReadPin(AnalogPin.P1) <= 399 && pins.analogReadPin(AnalogPin.P1) >= 300) {
-        radio.sendNumber(15)
-        basic.showNumber(25)
-        basic.showLeds(`
-            . # # # .
-            # . . . #
-            # . . . #
-            . # . . #
-            # # . # .
-            `)
+        radio.sendNumber(7)
     } else if (pins.analogReadPin(AnalogPin.P1) <= 299 && pins.analogReadPin(AnalogPin.P1) >= 200) {
-        radio.sendNumber(16)
-        basic.showNumber(50)
-        basic.showLeds(`
-            . # # # .
-            # . . . #
-            # . . . #
-            . # . . #
-            # # . # .
-            `)
+        radio.sendNumber(8)
     } else if (pins.analogReadPin(AnalogPin.P1) <= 199 && pins.analogReadPin(AnalogPin.P1) >= 100) {
-        radio.sendNumber(17)
-        basic.showNumber(75)
-        basic.showLeds(`
-            . # # # .
-            # . . . #
-            # . . . #
-            . # . . #
-            # # . # .
-            `)
+        radio.sendNumber(9)
     } else if (pins.analogReadPin(AnalogPin.P1) <= 99 && pins.analogReadPin(AnalogPin.P1) >= 1) {
-        radio.sendNumber(18)
-        basic.showNumber(100)
-        basic.showLeds(`
-            . # # # .
-            # . . . #
-            # . . . #
-            . # . . #
-            # # . # .
-            `)
+        radio.sendNumber(10)
     } else if (pins.analogReadPin(AnalogPin.P1) >= 601 && pins.analogReadPin(AnalogPin.P1) <= 700) {
-        radio.sendNumber(19)
-        basic.showNumber(25)
-        basic.showLeds(`
-            . # # # .
-            # . . . #
-            # . . . #
-            # . . # .
-            . # . # #
-            `)
+        radio.sendNumber(11)
     } else if (pins.analogReadPin(AnalogPin.P1) >= 701 && pins.analogReadPin(AnalogPin.P1) <= 800) {
-        radio.sendNumber(20)
-        basic.showNumber(50)
-        basic.showLeds(`
-            . # # # .
-            # . . . #
-            # . . . #
-            # . . # .
-            . # . # #
-            `)
+        radio.sendNumber(12)
     } else if (pins.analogReadPin(AnalogPin.P1) >= 801 && pins.analogReadPin(AnalogPin.P1) <= 900) {
+        radio.sendNumber(13)
+    } else if (pins.analogReadPin(AnalogPin.P1) >= 901) {
+        radio.sendNumber(14)
+    } else if (pins.analogReadPin(AnalogPin.P0) <= 399 && pins.analogReadPin(AnalogPin.P0) >= 300) {
+        radio.sendNumber(15)
+    } else if (pins.analogReadPin(AnalogPin.P0) <= 299 && pins.analogReadPin(AnalogPin.P0) >= 200) {
+        radio.sendNumber(16)
+    } else if (pins.analogReadPin(AnalogPin.P0) <= 199 && pins.analogReadPin(AnalogPin.P0) >= 100) {
+        radio.sendNumber(17)
+    } else if (pins.analogReadPin(AnalogPin.P0) <= 99 && pins.analogReadPin(AnalogPin.P0) >= 1) {
+        radio.sendNumber(18)
+    } else if (pins.analogReadPin(AnalogPin.P0) >= 601 && pins.analogReadPin(AnalogPin.P0) <= 700) {
+        radio.sendNumber(19)
+    } else if (pins.analogReadPin(AnalogPin.P0) >= 701 && pins.analogReadPin(AnalogPin.P0) <= 800) {
+        radio.sendNumber(20)
+    } else if (pins.analogReadPin(AnalogPin.P0) >= 801 && pins.analogReadPin(AnalogPin.P0) <= 900) {
         radio.sendNumber(21)
-        basic.showNumber(75)
-        basic.showLeds(`
-            . # # # .
-            # . . . #
-            # . . . #
-            # . . # .
-            . # . # #
-            `)
-    } else if (pins.analogReadPin(AnalogPin.P1) >= 901 && pins.analogReadPin(AnalogPin.P1) <= 1000) {
+    } else if (pins.analogReadPin(AnalogPin.P0) >= 901) {
         radio.sendNumber(22)
-        basic.showNumber(100)
-        basic.showLeds(`
-            . # # # .
-            # . . . #
-            # . . . #
-            # . . # .
-            . # . # #
-            `)
     } else if (false) {
     	
     } else if (false) {
@@ -163,6 +91,5 @@ basic.forever(function () {
         radio.sendNumber(0)
         basic.clearScreen()
     }
-    basic.pause(100)
     basic.clearScreen()
 })
